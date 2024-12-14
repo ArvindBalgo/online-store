@@ -1,1 +1,77 @@
-<button (click)="redirectToWhatsApp()">Redirect to WhatsApp</button>
+<div style="margin: 15px; display: flex; gap: 15px">
+  <mat-card class="example-card" appearance="outlined">
+    <mat-card-header>
+      <mat-card-title>Paper Cups</mat-card-title>
+      <mat-card-subtitle>White</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="/assets/CUPS_WHITE.png" alt="White Cups 200ML">
+    <mat-card-content>
+      <p>White Paper Cups</p>
+      <p>Capacity: 200ML</p>
+      <p>Minimum Quantity: 50 Units</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <mat-form-field class="example-form-field" appearance="outline">
+        <input matInput type="number" step="50" [(ngModel)]="whiteCups">
+      </mat-form-field>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="example-card" appearance="outlined">
+    <mat-card-header>
+      <mat-card-title>Paper Cups</mat-card-title>
+      <mat-card-subtitle>Brown</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="/assets/CUPS_BROWN.png" alt="Brown Cups 200ML">
+    <mat-card-content>
+      <p>Brown Paper Cups</p>
+      <p>Capacity: 200ML</p>
+      <p>Minimum Quantity: 50 Units</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <mat-form-field class="example-form-field" appearance="outline">
+        <input matInput type="number" step="50" [(ngModel)]="brownCups">
+      </mat-form-field>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="example-card" appearance="outlined">
+    <mat-card-header>
+      <mat-card-title>Banana Leaves</mat-card-title>
+      <mat-card-subtitle>Camel Brand</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="/assets/BANANA_LEAVES.png" alt="Banana Leaves">
+    <mat-card-content>
+      <p>Banana Leaves</p>
+      <p>Brand: Camel</p>
+      <p>Minimum Quantity: 1 Pack [100 Units]</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <mat-form-field class="example-form-field" appearance="outline">
+        <input matInput type="number" step="1" [(ngModel)]="bananaLeaves">
+      </mat-form-field>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="example-card" appearance="outlined">
+    <mat-card-header>
+      <mat-card-title>Bin Bags 50L</mat-card-title>
+      <mat-card-subtitle>Pack of 50</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="/assets/BIN_BAGS_50L.png" alt="Bin Bag 50L">
+    <mat-card-content>
+      <p>Bin Bags</p>
+      <p>Capacity: 50L</p>
+      <p>Minimum Quantity: 1 Pack</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <mat-form-field class="example-form-field" appearance="outline">
+        <input matInput type="number" step="1" [(ngModel)]="binBag50L">
+      </mat-form-field>
+    </mat-card-actions>
+  </mat-card>
+
+</div>
+<div style="position:fixed; bottom: 15px; right: 15px">
+  <button mat-flat-button (click)="redirectWhatsApp()">Order Now</button>
+</div>
